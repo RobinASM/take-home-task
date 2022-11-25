@@ -1,6 +1,14 @@
 # take-home-task
 
-Step 1 — Install dependencies.
+# Spreadsheet Parser
+
+## Installation
+
+Node.js is required to execute this program.
+Download the project and access the folder. Once inside run the command
+
+``` npm install ```
+
 - npm install
 
 Step 2 — Run the program in the command line.
