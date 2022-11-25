@@ -1,0 +1,569 @@
+{
+  "name": "sheet2",
+  "freeze": "A1",
+  "styles": [
+    {
+      "format": "numberNoDecimal"
+    },
+    {
+      "format": "percentNoDecimal"
+    },
+    {
+      "format": "percentNoDecimal",
+      "bgcolor": "#c45a10"
+    },
+    {
+      "format": "percentNoDecimal",
+      "bgcolor": "#ed7d31"
+    },
+    {
+      "format": "percentNoDecimal",
+      "bgcolor": "#a7d08c"
+    },
+    {
+      "format": "numberNoDecimal",
+      "bgcolor": "#c5e0b3"
+    },
+    {
+      "format": "percentNoDecimal",
+      "bgcolor": "#538136"
+    },
+    {
+      "format": "numberNoDecimal",
+      "bgcolor": "#bdd7ee"
+    },
+    {
+      "format": "numberNoDecimal",
+      "bgcolor": "#ffe59a"
+    },
+    {
+      "bgcolor": "#ffe59a"
+    },
+    {
+      "format": "numberNoDecimal",
+      "bgcolor": "#7030a0"
+    },
+    {
+      "format": "numberNoDecimal",
+      "bgcolor": "#d8d8d8"
+    },
+    {
+      "format": "numberNoDecimal",
+      "bgcolor": "#bfbfbf"
+    },
+    {
+      "format": "numberNoDecimal",
+      "bgcolor": "#a5a5a5"
+    },
+    {
+      "format": "numberNoDecimal",
+      "bgcolor": "#ffffff"
+    },
+    {
+      "bgcolor": "#ffffff"
+    },
+    {
+      "format": "percentNoDecimal",
+      "bgcolor": "#ffffff"
+    },
+    {
+      "font": {
+        "bold": true
+      }
+    }
+  ],
+  "merges": [],
+  "rows": {
+    "0": {
+      "cells": {
+        "0": {
+          "text": ""
+        },
+        "1": {
+          "text": "Common Stock",
+          "style": 17
+        },
+        "2": {
+          "text": "Preferred Stock",
+          "style": 17
+        },
+        "3": {
+          "text": "Stock Plan",
+          "style": 17
+        },
+        "4": {
+          "text": "Total Securities",
+          "style": 17
+        },
+        "5": {
+          "text": "Outstanding Ownership",
+          "style": 17
+        },
+        "6": {
+          "text": "Fully Diluted Ownership",
+          "style": 17
+        }
+      }
+    },
+    "1": {
+      "cells": {
+        "0": {
+          "text": "Founders"
+        },
+        "1": {
+          "text": "9250000",
+          "style": 14
+        },
+        "2": {
+          "text": "",
+          "style": 15
+        },
+        "3": {
+          "text": "",
+          "style": 15
+        },
+        "4": {
+          "text": "9250000",
+          "style": 14
+        },
+        "5": {
+          "text": "=e2/e5",
+          "style": 16
+        },
+        "6": {
+          "text": "=e2/e9",
+          "style": 16
+        }
+      }
+    },
+    "2": {
+      "cells": {
+        "0": {
+          "text": "Options outstanding"
+        },
+        "1": {
+          "text": "",
+          "style": 15
+        },
+        "2": {
+          "text": "",
+          "style": 15
+        },
+        "3": {
+          "text": "300000",
+          "style": 14
+        },
+        "4": {
+          "text": "=d3",
+          "style": 14
+        },
+        "5": {
+          "text": "=e3/e5",
+          "style": 16
+        },
+        "6": {
+          "text": "=e3/e9",
+          "style": 16
+        }
+      }
+    },
+    "3": {
+      "cells": {
+        "0": {
+          "text": "Promised Options"
+        },
+        "1": {
+          "text": "",
+          "style": 15
+        },
+        "2": {
+          "text": "",
+          "style": 15
+        },
+        "3": {
+          "text": "350000",
+          "style": 14
+        },
+        "4": {
+          "text": "=d4",
+          "style": 14
+        },
+        "5": {
+          "text": "=e4/e5",
+          "style": 16
+        },
+        "6": {
+          "text": "=e4/e9",
+          "style": 16
+        }
+      }
+    },
+    "4": {
+      "cells": {
+        "0": {
+          "text": "Total Outstanding",
+          "style": 17
+        },
+        "1": {
+          "text": "=sum(b2:b4)",
+          "style": 14
+        },
+        "2": {
+          "text": "0",
+          "style": 15
+        },
+        "3": {
+          "text": "=sum(d2:d4)",
+          "style": 14
+        },
+        "4": {
+          "text": "=sum(e2:e4)",
+          "style": 14
+        },
+        "5": {
+          "text": "=sum(f2:f4)",
+          "style": 16
+        },
+        "6": {
+          "text": "=sum(g2:g4)",
+          "style": 16
+        }
+      }
+    },
+    "5": {
+      "cells": {
+        "0": {
+          "text": ""
+        },
+        "1": {
+          "text": "",
+          "style": 15
+        },
+        "2": {
+          "text": "",
+          "style": 15
+        },
+        "3": {
+          "text": "",
+          "style": 15
+        },
+        "4": {
+          "text": "",
+          "style": 15
+        },
+        "5": {
+          "text": "",
+          "style": 15
+        },
+        "6": {
+          "text": "",
+          "style": 15
+        }
+      }
+    },
+    "6": {
+      "cells": {
+        "0": {
+          "text": "Options Available"
+        },
+        "1": {
+          "text": "",
+          "style": 15
+        },
+        "2": {
+          "text": "",
+          "style": 15
+        },
+        "3": {
+          "text": "100000",
+          "style": 14
+        },
+        "4": {
+          "text": "=d7",
+          "style": 14
+        },
+        "5": {
+          "text": "", 
+          "style": 15
+        },
+        "6": {
+          "text": "=e7/e9",
+          "style": 16
+        }
+      }
+    },
+    "7": {
+      "cells": {
+        "0": {
+          "text": ""
+        },
+        "1": {
+          "text": "",
+          "style": 15
+        },
+        "2": {
+          "text": "",
+          "style": 15
+        },
+        "3": {
+          "text": "",
+          "style": 15
+        },
+        "4": {
+          "text": "",
+          "style": 15
+        },
+        "5": {
+          "text": "",
+          "style": 15
+        },
+        "6": {
+          "text": "",
+          "style": 15
+        }
+      }
+    },
+    "8": {
+      "cells": {
+        "0": {
+          "text": "Total Fully Diluted",
+          "style": 17
+        },
+        "1": {
+          "text": "=b5",
+          "style": 14
+        },
+        "2": {
+          "text": "",
+          "style": 15
+        },
+        "3": {
+          "text": "=sum(d5:d8)",
+          "style": 14
+        },
+        "4": {
+          "text": "=sum(e5:e8)",
+          "style": 14
+        },
+        "5": {
+          "text": "",
+          "style": 15
+        },
+        "6": {
+          "text": "=sum(g5:g8)",
+          "style": 16
+        }
+      }
+    },
+    "9": {
+      "cells": {
+        "0": {
+          "text": ""
+        },
+        "1": {
+          "text": ""
+        },
+        "2": {
+          "text": ""
+        },
+        "3": {
+          "text": ""
+        },
+        "4": {
+          "text": ""
+        },
+        "5": {
+          "text": ""
+        },
+        "6": {
+          "text": ""
+        }
+      }
+    },
+    "10": {
+      "cells": {
+        "0": {
+          "text": ""
+        },
+        "1": {
+          "text": ""
+        },
+        "2": {
+          "text": ""
+        },
+        "3": {
+          "text": ""
+        },
+        "4": {
+          "text": ""
+        },
+        "5": {
+          "text": ""
+        },
+        "6": {
+          "text": ""
+        }
+      }
+    },
+    "11": {
+      "cells": {
+        "0": {
+          "text": ""
+        },
+        "1": {
+          "text": ""
+        },
+        "2": {
+          "text": ""
+        },
+        "3": {
+          "text": ""
+        },
+        "4": {
+          "text": ""
+        },
+        "5": {
+          "text": ""
+        },
+        "6": {
+          "text": ""
+        }
+      }
+    },
+    "12": {
+      "cells": {
+        "2": {
+          "text": ""
+        },
+        "3": {
+          "text": ""
+        },
+        "4": {
+          "text": ""
+        },
+        "5": {
+          "text": ""
+        },
+        "6": {
+          "text": ""
+        }
+      }
+    },
+    "13": {
+      "cells": {
+        "2": {
+          "text": ""
+        },
+        "3": {
+          "text": ""
+        },
+        "4": {
+          "text": ""
+        },
+        "5": {
+          "text": ""
+        },
+        "6": {
+          "text": ""
+        }
+      }
+    },
+    "14": {
+      "cells": {
+        "2": {
+          "text": ""
+        },
+        "3": {
+          "text": ""
+        },
+        "4": {
+          "text": ""
+        },
+        "5": {
+          "text": ""
+        },
+        "6": {
+          "text": ""
+        }
+      }
+    },
+    "15": {
+      "cells": {
+        "2": {
+          "text": ""
+        },
+        "3": {
+          "text": ""
+        },
+        "4": {
+          "text": ""
+        },
+        "5": {
+          "text": ""
+        },
+        "6": {
+          "text": ""
+        }
+      }
+    },
+    "16": {
+      "cells": {
+        "2": {
+          "text": ""
+        },
+        "3": {
+          "text": ""
+        },
+        "4": {
+          "text": ""
+        },
+        "5": {
+          "text": ""
+        },
+        "6": {
+          "text": ""
+        }
+      }
+    },
+    "17": {
+      "cells": {
+        "2": {
+          "text": ""
+        },
+        "3": {
+          "text": ""
+        },
+        "4": {
+          "text": ""
+        },
+        "5": {
+          "text": ""
+        },
+        "6": {
+          "text": ""
+        }
+      }
+    }
+  },
+  "cols": {
+    "0": {
+      "width": 151
+    },
+    "1": {
+      "width": 112
+    },
+    "2": {
+      "width": 123
+    },
+    "4": {
+      "width": 112
+    },
+    "5": {
+      "width": 170
+    },
+    "6": {
+      "width": 179
+    }
+  },
+  "validations": []
+}

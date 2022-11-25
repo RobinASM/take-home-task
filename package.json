@@ -1,0 +1,19 @@
+{
+  "name": "spreadsheet-parser",
+  "version": "1.0.0",
+  "description": "This a take-home assignment II from Decentral.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose ./tests",
+    "start": "node index.js"
+  },
+  "author": "Ruben Alvarez",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "dependencies": {
+    "commander": "^9.4.1",
+    "exceljs": "^4.3.0"
+  }
+}
