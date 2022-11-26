@@ -19,41 +19,44 @@ const getStyleIndex = (cell) => {
 
     // if the cell is a number and has a background color, add it to the structure as an object.
     if (cell?.text?.match(/^[0-9]+$/) && cell?.text !== "0") {
-        styleIndex = structure.styles.findIndex(style => style.bgcolor === `#${bgColor.toLocaleLowerCase()}` && style.format === "numberNoDecimal");
+        styleIndex = structure.styles.findIndex(style => style.bgcolor === `#${bgColor.toLocaleLowerCase().slice(0, -2)}` && style.format === "numberNoDecimal");
 
         if (styleIndex === -1) {
             structure.styles.push({
                 "format": "numberNoDecimal",
-                "bgcolor": `#${bgColor.toLocaleLowerCase()}`,
+                "bgcolor": `#${bgColor.toLocaleLowerCase().slice(0, -2)}`,
             });
             styleIndex = structure.styles.length - 1;
         }
     }
 
     if ((cell?.value === null || cell?.text === "0") && bgColor !== null) {
+
+        console.log("cell.value", cell.text)
+
         styleIndex = structure.styles.findIndex(style => {
             const length = Object.keys(style).length;
-            if (style.bgcolor === `#${bgColor.toLocaleLowerCase()}` && length === 1) {
+            if (style.bgcolor === `#${bgColor.toLocaleLowerCase().slice(0, -2)}` && length === 1) {
                 return style;
             }
         });
 
         if (styleIndex === -1) {
             structure.styles.push({
-                "bgcolor": `#${bgColor.toLocaleLowerCase()}`,
+                "bgcolor": `#${bgColor.toLocaleLowerCase().slice(0, -2)}`,
             });
             styleIndex = structure.styles.length - 1;
         }
     }
 
     // if the cell is a percentage and has a background color, add it to the structure as an object.
-    if (cell.numFmt === '0.00%') {
-        styleIndex = structure.styles.findIndex(style => style.bgcolor === `#${bgColor.toLocaleLowerCase()}` && style.format === "percentNoDecimal");
+    if (cell.numFmt === '0.00%' && cell?.value !== null) {
+        styleIndex = structure.styles.findIndex(style => style.bgcolor === `#${bgColor.toLocaleLowerCase().slice(0, -2)}` && style.format === "percentNoDecimal");
 
         if (styleIndex === -1) {
             structure.styles.push({
                 "format": "percentNoDecimal",
-                "bgcolor": `#${bgColor.toLocaleLowerCase()}`,
+                "bgcolor": `#${bgColor.toLocaleLowerCase().slice(0, -2)}`,
             });
             styleIndex = structure.styles.length - 1;
 
@@ -130,6 +133,7 @@ const parser = async (source, output) => {
 
             // if the cell is null, add it to the structure as an object.
             if (cell.value === null) {
+
                 structure.rows[rowNumber - 1].cells[colNumber - 1] = {
                     "text": ""
                 }
@@ -151,6 +155,7 @@ const parser = async (source, output) => {
         });
     })
 
+    console.log("Spreadsheet Parser executed successfully.");
     fs.writeFileSync(output, JSON.stringify(structure, null, 2));
     return structure;
 }
@@ -159,4 +164,4 @@ const parser = async (source, output) => {
 //     console.log("Parser data: ", data);
 // });
 
-module.exports = parser
+module.exports = { parser, getStyleIndex };

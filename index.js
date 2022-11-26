@@ -1,6 +1,6 @@
 const { Command } = require('commander');
 const program = new Command();
-const parser = require('./src/spreadsheet-parser');
+const { parser } = require('./src/spreadsheet-parser');
 
 program
     .name('spreadsheet-parser')
@@ -15,7 +15,7 @@ const options = program.opts();
 
 if (!options.source) {
     console.log('Please specify the source file.');
-} 
+}
 
 if (!options.output) {
     console.log('Please specify the output path.');
