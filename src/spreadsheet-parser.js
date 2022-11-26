@@ -32,8 +32,6 @@ const getStyleIndex = (cell) => {
 
     if ((cell?.value === null || cell?.text === "0") && bgColor !== null) {
 
-        console.log("cell.value", cell.text)
-
         styleIndex = structure.styles.findIndex(style => {
             const length = Object.keys(style).length;
             if (style.bgcolor === `#${bgColor.toLocaleLowerCase().slice(0, -2)}` && length === 1) {
